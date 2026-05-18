@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>before. | 사기 전에 얼마나 빠질 수 있는지 먼저</title>
+  <meta name="description" content="before는 내가 사려는 종목이 한 달 안에 최대 얼마나 떨어질 수 있는지 미리 알려주는 앱입니다. 사전예약 중.">
+  <meta property="og:title" content="before. | 사기 전에 떨어질 위험부터 확인">
+  <meta property="og:description" content="이 종목, 한 달 안에 얼마나 빠질 수 있을까? AI가 숫자로 알려줍니다.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <!-- GA4: G-XXXXXXXXXX를 실제 Measurement ID로 교체 -->
+  <script>
+    window.BEFORE_GA_ID = "G-XXXXXXXXXX";
+    (function(){
+      var id=window.BEFORE_GA_ID;
+      if(!id||id==="G-XXXXXXXXXX")return;
+      var s=document.createElement("script");
+      s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+id;
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      window.gtag=function(){dataLayer.push(arguments);};
+      gtag("js",new Date());gtag("config",id);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">
+      <span class="nav-mark">b</span>
+      <span>before<span style="color:#dc2626">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="메인 메뉴">
+      <a href="#features">핵심 기능</a>
+      <a href="#risk">위험 분석</a>
+      <a href="#flow">이용 흐름</a>
+      <a class="nav-cta" href="#reserve">사전예약</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section id="top" class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">
+          <span class="hero-dot"></span>
+          AI 하락 위험 분석기
+        </span>
+        <h1>before<span class="dot">.</span></h1>
+        <p class="hero-desc">
+          주식 사기 전에,<br>
+          이 종목이 한 달 안에 최대 얼마나 떨어질 수 있는지<br>
+          먼저 확인하세요.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reserve" data-form-link data-event="hero_reserve">사전예약 하기</a>
+          <a class="btn btn-outline" href="#risk">분석 화면 보기</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>30일</strong>
+            <span>앞으로 한 달 예측</span>
+          </div>
+          <div class="stat">
+            <strong>최악</strong>
+            <span>최대 얼마나 빠질 수 있는지</span>
+          </div>
+          <div class="stat">
+            <strong>알림</strong>
+            <span>위험 변화 시 즉시 알려줌</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Mockup -->
+      <div class="phone-wrap">
+        <div class="float-chip">⚡ 위험 상승 감지</div>
+        <div class="phone" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="phone-content">
+              <div class="ph-header">
+                <div class="ph-logo">before<span class="dot">.</span></div>
+                <div class="ph-avatar">U</div>
+              </div>
+              <div class="ph-search">🔍 티커 또는 종목명 검색</div>
+              <div class="ph-section-label">TODAY · RISK SPOTLIGHT</div>
+              <div class="ph-title">오늘 가장 변동성이 큰 종목</div>
+              <div class="ph-card">
+                <div class="ph-stock-row">
+                  <div class="ph-stock-info">
+                    <div class="ph-stock-icon">PLTR</div>
+                    <div>
+                      <div class="ph-stock-name">팰런티어</div>
+                      <div class="ph-stock-ticker">PLTR · $124.62</div>
+                    </div>
+                  </div>
+                  <span class="ph-badge">● 높음</span>
+                </div>
+                <div class="ph-risk-box">
+                  <div class="ph-risk-label">한 달 안에 최대 이만큼 빠질 수 있어요</div>
+                  <div class="ph-risk-value">−22%</div>
+                  <div class="ph-risk-note">통계 모델 기반 추정치이며 특정 가격을 보장하지 않습니다.</div>
+                </div>
+              </div>
+              <div class="ph-watchlist">
+                <div class="ph-watch-header">
+                  <strong>관심 종목</strong>
+                  <span>위험 높은 순</span>
+                </div>
+                <div class="ph-watch-row">
+                  <div><strong>NVDA</strong><small>엔비디아</small></div>
+                  <div class="ph-watch-risk">−18.4%</div>
+                </div>
+                <div class="ph-watch-row">
+                  <div><strong>TSLA</strong><small>테슬라</small></div>
+                  <div class="ph-watch-risk">−15.1%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-notif">
+          <strong>📢 PLTR 위험도 상승</strong>
+          <p>관심종목의 30일 하방 리스크가 전일 대비 확대되었습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROBLEM ========== -->
+<main>
+<section id="features" class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="section-label">PROBLEM</p>
+      <h2 class="section-title">"이거 사도 괜찮아?"<br>아무도 대답 안 해주잖아요.</h2>
+      <p class="section-desc">
+        투자 앱들은 전부 "이거 오를 거야"만 얘기합니다.
+        근데 진짜 궁금한 건 "얼마나 떨어질 수 있는지"잖아요. before는 그걸 알려줍니다.
+      </p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card accent reveal">
+        <div class="feature-icon">↓</div>
+        <h3>떨어질 수 있는 폭 먼저</h3>
+        <p>"얼마나 오를까"보다 "최악의 경우 얼마나 빠질까"를 먼저 보여줘서 급한 매수를 막아줍니다.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon">30</div>
+        <h3>한 달 뒤까지 예측</h3>
+        <p>지난 한 달 실제 가격과 앞으로 한 달 예측 흐름을 한 화면에서 비교할 수 있어요.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon">AI</div>
+        <h3>왜 위험한지 설명</h3>
+        <p>AI가 "왜 지금 위험한지"를 누구나 이해할 수 있는 쉬운 말로 정리해줍니다.</p>
+      </article>
+      <article class="feature-card accent reveal">
+        <div class="feature-icon">🔔</div>
+        <h3>위험하면 바로 알림</h3>
+        <p>내가 찜한 종목의 위험도가 올라가면 폰으로 바로 알려줍니다.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon">🔥</div>
+        <h3>오늘의 위험 급등</h3>
+        <p>매일 위험도가 급등한 종목을 카드 형태로 메인 화면에서 확인합니다.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-icon">📤</div>
+        <h3>공유 리스크 카드</h3>
+        <p>분석 결과를 예쁜 카드로 만들어 SNS나 메신저로 공유할 수 있습니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RISK VIEW ========== -->
+<section id="risk" class="section">
+  <div class="wrap">
+    <div class="showcase reveal">
+      <div>
+        <p class="section-label">RISK VIEW</p>
+        <h2 class="section-title" style="max-width:480px">지난 한 달 흐름,<br>앞으로 한 달 예측.</h2>
+        <p class="section-desc" style="max-width:420px">
+          회색 선은 지금까지의 실제 가격이고, 빨간 선은 앞으로 떨어질 수 있는 범위예요.
+          복잡한 계산 대신 "최대 얼마나 빠질 수 있는지"를 한눈에 보여줍니다.
+        </p>
+        <div class="showcase-metrics">
+          <div class="metric-row"><span>최대 하락폭</span><strong style="color:#dc2626">−22.0%</strong></div>
+          <div class="metric-row"><span>위험 등급</span><strong>높음</strong></div>
+          <div class="metric-row"><span>분석 기간</span><strong>한 달 + 한 달</strong></div>
+        </div>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-header">
+          <div>
+            <h3>가격 흐름</h3>
+            <p>지난 한 달 실제 가격 + 앞으로 한 달 예측</p>
+          </div>
+          <div class="chart-risk-num">−22.0%</div>
+        </div>
+        <div class="chart-area">
+          <svg viewBox="0 0 600 280" role="img" aria-label="before 하방 리스크 차트">
+            <defs>
+              <linearGradient id="rFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#dc2626" stop-opacity=".22"/>
+                <stop offset="1" stop-color="#dc2626" stop-opacity=".02"/>
+              </linearGradient>
+              <linearGradient id="pFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#64748b" stop-opacity=".1"/>
+                <stop offset="1" stop-color="#64748b" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g stroke="#eef1f4" stroke-width="1">
+              <path d="M40 40 H560"/><path d="M40 90 H560"/><path d="M40 140 H560"/>
+              <path d="M40 190 H560"/><path d="M40 240 H560"/>
+            </g>
+            <g fill="#9ca3af" font-size="11" font-weight="700">
+              <text x="4" y="44">+10%</text><text x="14" y="144">0%</text>
+              <text x="6" y="194">−10%</text><text x="6" y="244">−20%</text>
+            </g>
+            <path d="M40 140 H560" stroke="#cfd5dd" stroke-width="1.5"/>
+            <path d="M300 30 V255" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 7"/>
+            <rect x="280" y="16" width="42" height="20" rx="6" fill="#fff" stroke="#e5e7eb"/>
+            <text x="290" y="30" font-size="11" font-weight="800" fill="#6b7280">오늘</text>
+            <!-- Past -->
+            <path d="M44 168 C66 155 84 172 106 160 C128 146 144 153 166 138 C188 120 210 128 234 112 C256 98 280 108 300 88 L300 140 L44 140 Z" fill="url(#pFill)"/>
+            <path d="M44 168 C66 155 84 172 106 160 C128 146 144 153 166 138 C188 120 210 128 234 112 C256 98 280 108 300 88" fill="none" stroke="#6b7280" stroke-width="2.8" stroke-linecap="round"/>
+            <!-- Future Q05 -->
+            <path d="M300 88 C328 110 348 124 370 144 C400 174 430 190 460 210 C496 236 530 248 556 262 L556 172 C530 178 496 184 462 190 C432 196 402 188 372 174 C346 162 320 126 300 88 Z" fill="url(#rFill)"/>
+            <path d="M300 88 C328 110 348 124 370 144 C400 174 430 190 460 210 C496 236 530 248 556 262" fill="none" stroke="#dc2626" stroke-width="3.4" stroke-linecap="round"/>
+            <!-- Future Q15 -->
+            <path d="M300 88 C330 104 350 114 374 130 C406 152 436 162 466 172 C500 184 534 192 556 202" fill="none" stroke="#ea6f6f" stroke-width="2.4" stroke-dasharray="7 7" stroke-linecap="round"/>
+            <circle cx="556" cy="262" r="6" fill="#dc2626"/>
+            <rect x="486" y="234" width="66" height="26" rx="7" fill="#fff" stroke="#fecaca"/>
+            <text x="498" y="252" font-size="13" font-weight="900" fill="#dc2626">−22.0%</text>
+            <g fill="#9ca3af" font-size="11" font-weight="700">
+              <text x="38" y="274">−30</text><text x="160" y="274">−15</text>
+              <text x="296" y="274">0</text><text x="420" y="274">+15</text>
+              <text x="540" y="274">+30</text>
+            </g>
+          </svg>
+        </div>
+        <div class="legend">
+          <span><i class="legend-dot" style="background:#6b7280"></i>실제 가격</span>
+          <span><i class="legend-dot" style="background:#dc2626"></i>최악의 경우</span>
+          <span><i class="legend-dot" style="background:#ea6f6f"></i>나쁜 경우</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FLOW ========== -->
+<section id="flow" class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="section-label">HOW IT WORKS</p>
+      <h2 class="section-title">검색 → 분석 → 알림,<br>딱 4단계면 끝.</h2>
+      <p class="section-desc">
+        종목 검색하면 AI가 알아서 분석하고, 위험해지면 알림까지. 복잡한 건 우리가 다 처리해요.
+      </p>
+    </div>
+    <div class="steps-grid">
+      <article class="step-card reveal">
+        <h3>종목 검색</h3>
+        <p>티커 또는 종목명으로 분석 대상을 찾고 관심종목에 추가합니다.</p>
+      </article>
+      <article class="step-card reveal">
+        <h3>위험도 분석</h3>
+        <p>AI가 최근 가격 흐름을 분석해서 앞으로 얼마나 떨어질 수 있는지 계산해요.</p>
+      </article>
+      <article class="step-card reveal">
+        <h3>이유 설명</h3>
+        <p>"왜 지금 위험한지" 이유를 누구나 알아볼 수 있게 쉽게 풀어줘요.</p>
+      </article>
+      <article class="step-card reveal">
+        <h3>즉시 알림</h3>
+        <p>찜한 종목이 갑자기 위험해지거나 안전해지면 바로 폰으로 알려줘요.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== USER VALUE (Dark) ========== -->
+<section id="value" class="dark-band">
+  <div class="section">
+    <div class="wrap">
+      <div class="dark-grid">
+        <div class="reveal">
+          <p class="section-label">왜 BEFORE인가</p>
+          <h2 class="section-title">"급해서 샀다가 물렸다"<br>그 전에 한 번만 확인하세요.</h2>
+          <p class="section-desc">
+            before는 불안을 없애는 게 아니라, 그 불안을 숫자로 바꿔서 판단할 수 있게 해줍니다.
+          </p>
+          <div class="value-tags">
+            <div class="value-tag">사기 전 불안 줄이기</div>
+            <div class="value-tag">급락 가능성 미리 확인</div>
+            <div class="value-tag">급한 매수 방지</div>
+            <div class="value-tag">찜한 종목 위험 관리</div>
+            <div class="value-tag">전문가만 아는 정보 쉽게</div>
+            <div class="value-tag">마음 편한 투자 판단</div>
+          </div>
+        </div>
+        <div class="quote-card reveal">
+          <blockquote>"이거 오를까?"보다 먼저 물어봐야 할 질문은<br>"떨어지면 얼마까지 버틸 수 있어?"입니다.</blockquote>
+          <cite>
+            before는 수익을 약속하지 않습니다.<br>
+            대신 내 종목이 얼마나 떨어질 수 있는지를<br>
+            앱 첫 화면에서 바로 보여줍니다.
+          </cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRE-REGISTER / CTA ========== -->
+<section id="reserve" class="cta-section">
+  <div class="section">
+    <div class="wrap">
+      <div class="cta-grid">
+        <div class="reveal">
+          <p class="section-label">PRE-REGISTER</p>
+          <h2 class="section-title">출시 전에 미리 만나보세요.</h2>
+          <p class="section-desc">
+            사전예약 후 출시 알림을 받으실 수 있습니다.<br>
+            어떤 기능이 가장 필요한지도 함께 알려주세요.
+          </p>
+        </div>
+        <aside class="cta-card reveal">
+          <h3>사전예약</h3>
+          <p>before 앱 출시 시 가장 먼저 알림을 받고, 서비스에 대한 의견을 남겨주세요.</p>
+          <div class="cta-reward">
+            <strong>🎁 참여 리워드</strong>
+            <span>사전예약자 중 추첨을 통해 스타벅스 기프티콘을 드립니다. 당첨자는 개별 안내 예정.</span>
+          </div>
+          <a class="cta-btn" href="#" target="_blank" rel="noopener" data-form-link data-event="reserve_click">사전예약 하기 →</a>
+          <p style="font-size:11px;color:#666;margin-top:10px;text-align:center">
+            개인정보 수집 안내는 폼 첫 화면에 고지됩니다.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL ========== -->
+<section class="section final-section">
+  <div class="wrap reveal">
+    <p class="section-label">BEFORE APP</p>
+    <h2 class="section-title">"오를 것 같아"만 듣던 시장에서,<br>떨어질 위험을 먼저 보는 습관.</h2>
+    <p class="section-desc">
+      내 종목이 한 달 안에 얼마나 빠질 수 있는지,
+      위험해지면 알림까지. 이 앱 하나로 확인하세요.
+    </p>
+    <div class="final-actions">
+      <a class="btn btn-risk" href="#" target="_blank" rel="noopener" data-form-link data-event="final_reserve">사전예약 하기</a>
+      <a class="btn btn-outline" href="#risk">분석 화면 보기</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        before<span style="color:#dc2626">.</span>
+        <span>AI 기반 주식 하락 위험 분석 앱</span>
+      </div>
+      <div class="footer-disclaimer">
+        본 페이지는 서비스 소개용 랜딩 페이지입니다. before는 투자자문업 등록 사업자가 아니며,
+        통계 모델 기반 정보 제공만을 목적으로 합니다.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Google Form URL — 실제 URL로 교체하세요
+  const GOOGLE_FORM_URL = "https://forms.gle/PUT_YOUR_GOOGLE_FORM_URL_HERE";
+
+  document.querySelectorAll("[data-form-link]").forEach(function(el) {
+    el.setAttribute("href", GOOGLE_FORM_URL);
+    el.addEventListener("click", function() {
+      if (typeof window.gtag === "function") {
+        gtag("event", el.dataset.event || "form_open", {
+          event_category: "lead",
+          event_label: el.textContent.trim()
+        });
+      }
+    });
+  });
+
+  // Scroll reveal animation
+  var reveals = document.querySelectorAll(".reveal");
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(function(el) { observer.observe(el); });
+</script>
+</body>
+</html>
