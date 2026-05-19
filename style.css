@@ -383,7 +383,7 @@ img { display: block; max-width: 100%; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .phone { width: 260px; height: 540px; }
   .phone-wrap { display: flex; justify-content: center; }
-  .float-chip { left: 0; top: 60px; font-size: 11px; padding: 6px 12px; }
+  .float-chip { left: 10px; top: 80px; font-size: 11px; padding: 6px 12px; }
   .float-notif { right: -8px; bottom: 80px; width: 170px; padding: 10px; }
   .float-notif strong { font-size: 11px; }
   .float-notif p { font-size: 10px; }
