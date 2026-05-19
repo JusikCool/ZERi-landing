@@ -374,14 +374,19 @@ img { display: block; max-width: 100%; }
   .hero { padding: 120px 0 60px; }
   .hero-grid { grid-template-columns: 1fr; }
   .phone-wrap { margin-top: 20px; }
-  .float-notif { right: 0; }
+  .float-notif { right: 0; bottom: 100px; width: 180px; }
   .float-chip { left: 4px; }
 }
 
 @media (max-width: 680px) {
   .hero { padding: 100px 0 48px; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
-  .phone { width: 270px; height: 560px; }
+  .phone { width: 260px; height: 540px; }
+  .phone-wrap { display: flex; justify-content: center; }
+  .float-chip { left: 0; top: 60px; font-size: 11px; padding: 6px 12px; }
+  .float-notif { right: -8px; bottom: 80px; width: 170px; padding: 10px; }
+  .float-notif strong { font-size: 11px; }
+  .float-notif p { font-size: 10px; }
 }
 
 /* ===== SECTIONS ===== */
@@ -522,6 +527,12 @@ img { display: block; max-width: 100%; }
 .legend-dot {
   width: 14px; height: 2px; border-radius: 999px;
   display: inline-block;
+}
+
+.legend-dot.dashed {
+  background: transparent !important;
+  border-top: 2px dashed #ea6f6f;
+  height: 0;
 }
 
 @media (max-width: 780px) {
